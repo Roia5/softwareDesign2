@@ -1,0 +1,19 @@
+v1.1
+both parsers now call the "setup" method which does the work.
+the first method inside setup removes the orders which are made for products that dont exist.
+it builds a set of productIDs and then removes the bad orders using lambda.
+
+there is now a User class that holds the number of orders (might remove, we have order list size),
+number of cancelled and modified orders, total amount spent and order list.
+
+the next method builds a user map (userID -> User, same as other maps).
+
+//TODO
+parse XMLs (probably Roey)
+
+for each product, calculate the total amount bought (done when we have final version of orders)
+and calculate the average amount- need to save for each product how many valid orders were made for it.
+
+build files
+
+use guice

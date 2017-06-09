@@ -1,0 +1,11 @@
+LineStorage Plan
+
+helper- productID, lineNumber	//assuming same lineNumber in both files
+productID, average totalCount List<(userID,counter)>
+productID, List<orderID> //including cancelled
+
+helper- userID, lineNumber
+userID,List<(productID,amount)>
+userID countOrders countCancelled countModified totalAmountSpent List<orderID>
+
+orderID, currentNumOfProductsOrdered, isValid, isCancelled, isModified
